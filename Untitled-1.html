@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Before vs After – Mobile Fix</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+      gap: 30px;
+    }
+    .panel {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      background: #fff;
+    }
+    .panel h2 {
+      margin: 0;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+      background: #444;
+      color: white;
+      border-radius: 8px 8px 0 0;
+    }
+    .screenshot {
+      height: 500px;
+      background-size: cover;
+      background-position: top center;
+      border-radius: 0 0 8px 8px;
+    }
+
+    /* Replace with your own screenshots */
+    .before .screenshot {
+      background-image: url('https://i.imgur.com/S0fTgQx.png'); /* broken layout */
+    }
+    .after .screenshot {
+      background-image: url('https://i.imgur.com/zLhTtNT.png'); /* fixed layout */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="panel before">
+      <h2>Before</h2>
+      <div class="screenshot"></div>
+    </div>
+    <div class="panel after">
+      <h2>After</h2>
+      <div class="screenshot"></div>
+    </div>
+  </div>
+</body>
+</html>
